@@ -1,0 +1,29 @@
+
+   <div class="mt-4">
+    <table class="min-w-full rounded border border-gray-300 bg-white shadow text-left border-b">
+        <thead>
+            <tr class="border-b p-5 bg-gray-100">
+                <th class="px-4 py-2">Position</th>
+                <th class="px-4 py-2">Player</th>
+                <th class="px-4 py-2">Ranking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cursor-pointer transition-all hover:bg-blue-500 hover:text-white"
+            *ngFor="let player of ranking"
+            >
+                <td class="px-4 py-2">{{player.position}}</td>
+                <td class="px-4 py-2">
+                    <div class="flex items-center">
+                        <img src="{{player.profileImageUrl}}" class="w-8 h-8 mr-2 rounded-full" alt="Profile Image">
+                        <div>
+                            <span class="block font-bold">{{player.name}}</span>
+                            <p class="text-sm">{{player.country }}</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="px-4 py-2">{{player.rank}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

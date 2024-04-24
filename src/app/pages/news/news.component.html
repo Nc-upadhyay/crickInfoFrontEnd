@@ -1,0 +1,20 @@
+<span class="mt-2 text-2xl font-bold">Cricket News and Editorials</span>
+<!-- <div  class="flex items-top p-5">
+        <img class="rounded-lg " src="https://static.cricbuzz.com/a/img/v1/205x152/i1/c433344/dc-pacers-set-the-tone-as-gt-f.jpg" >
+    <div class="text-left px-5">
+        <span class="text-sm ">REPORTS  </span><span class="text-sm font-bold">• IPL 2024</span>
+        <h1 class="font-bold text-lg py-2">Delhi Capitals humble Gujarat Titans in low-scorer</h1>
+        <h2 class="py-2">GT were bundled out for 89 - a total which DC chased down in 8.5 overs</h2>
+        <span class="text-sm py-2">2h ago</span>
+    </div>
+</div> -->
+<div class="flex items-top p-5" *ngFor="let data of news">
+    <img class="rounded-lg "
+        src="{{data.imageUrl}}">
+    <div class="text-left px-5 hover:cursor-pointer "  (click)="submit(data.link)">
+        <span class="text-sm ">{{data.type}} </span><span class="text-sm font-bold">• {{data.title}}</span>
+        <h1 class="font-bold text-lg py-1">{{data.heading}}</h1>
+        <h2 class="mt-4">{{data.subHeading}}</h2>
+        <span class="mt-2 text-sm">{{data.time_ago}}</span>
+    </div>
+</div>
