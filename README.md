@@ -1,6 +1,4 @@
-# CrickInfo
-
-
+# Crickinfo 
 ## Project Demo
 https://github.com/Nc-upadhyay/crickInfoFrontEnd/assets/108361583/9eaefe2e-a805-42d0-a44a-ade534dfe2fa  
 ![Screenshot 2024-05-06 122821](https://github.com/Nc-upadhyay/crickInfoFrontEnd/assets/108361583/f5d4cf8b-82f6-4e1d-92bd-2a91784aebaf) 
